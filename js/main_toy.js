@@ -8,28 +8,10 @@ $(document).ready(function () {
     const shuffleMethods = false;
     const showGoldLabels = false;
     const pageSize = 1;
-    
-    const instructions_draggable = [
-        `Reorder the text boxes by dragging and dropping to rank them.`,
-        `Your rankings are saved automatically as you make changes.`,
-        `When finished, click "Download" to save your rankings as a JSON file.`,
-    ];
-    const instructions_inputtable = [
-        `Set the ranking of each text with integers (e.g., 1-N) – ties are allowed.`,
-        `Your rankings are saved automatically as you make changes.`,
-        `When finished, click "Download" to save your rankings as a JSON file.`,
-    ];
-    
+        
     let collectedData = [];
     let currentPage = 1;
     
-    const hash = window.location.hash;
-    const pageRegex = /page=(\d+)/;
-    if (hash && pageRegex.test(hash)) {
-        const match = hash.match(pageRegex);
-        currentPage = parseInt(match[1]);
-    }
-
     function renderInstructions() {
         if(useDraggableInterface) {
             var instructions = instructions_draggable;
@@ -146,26 +128,26 @@ $(document).ready(function () {
                                 </div>
                             </li>`;
                     } else {
-                        exampleHtml += `
-                        <li class="list-group-item ${className}" data-method="${method}">
-                            <div class="row">
-                            <div class="col-xs-auto"><span class="rank-number badge rounded-pill text-light">${method}</span></div>
-                            <div class="col">${example[method]}</div>
-                            </div>
-                        </li>`;
+                        exampleHtml += '<li class="list-group-item ' + className + '" data-method="' + method + '">';
+                        exampleHtml += '    <div class="row">';
+                        exampleHtml += '        <div class="col-xs-auto"><span class="rank-number badge rounded-pill text-light">'+ method + '</span></div>';
+                        exampleHtml += '        <div class="col">';
+                        exampleHtml += '            ' + example[method] + '</div>';
+                        exampleHtml += '        </div>';
+                        exampleHtml += '</li>';
                     }
                 }
                 else {
                     exampleHtml += `
-                    <li class="list-group-item ${className}" data-method="${method}">
+                    <li class="list-group-item ` + className + `" data-method="` + method + `">
                         <div class="row">
-                        <div class="col-xs-auto">
-                        <input type="text" class="form-control form-control-sm rank-number-input rounded text-light" value="${randomizedRanking[idx]}" />
-                        </div>
-                        <div class="col">${example[method]}</div>
+                            <div class="col-xs-auto">
+                                <input type="text" class="form-control form-control-sm rank-number-input rounded text-light" value="` + randomizedRanking[idx] + `" />
+                            </div>
+                            <div class="col">` + example[method] + `</div>
                         </div>
                     </li>`;
-                }
+            }
             });
             exampleHtml += `</ul></div>`;
             exampleContainer.append(exampleHtml);
@@ -225,7 +207,7 @@ $(document).ready(function () {
 
         // Save data to a local file asynchronously
         if (window.localStorage) {
-            const key = `example-${exampleIndex}`;
+            const key = `example-` +exampleIndex;
             const value = JSON.stringify(data);
             localStorage.setItem(key, value);
         } else {
@@ -233,20 +215,6 @@ $(document).ready(function () {
         }
     }
 
-    // function saveToFile() {
-    //     // const jsonData = JSON.stringify(collectedData);
-    //     // const blob = new Blob([jsonData], { type: "application/json" });
-    //     // const url = URL.createObjectURL(blob);
-    //     // const link = document.createElement("a");
-    //     // link.href = url;
-    //     // link.download = "annotation_data.json";
-    //     // document.body.appendChild(link);
-    //     // link.click();
-    //     // document.body.removeChild(link);
-    //     const jsonData = JSON.stringify(collectedData);
-    //     const inputElement = document.getElementById('jsonDataInput');
-    //     inputElement.value = jsonData;
-    // }
     
     function saveToTurker() {
         const jsonData = JSON.stringify(collectedData);
@@ -260,7 +228,7 @@ $(document).ready(function () {
         pagination.empty();
 
         for (let i = 1; i <= totalPages; i++) {
-            const pageItem = $(`<li class="page-item"><a class="page-link" href="#page=${i}">${i}</a></li>`);
+            const pageItem = $(`<li class="page-item"><a class="page-link" href="#page=` + i + `">` + i + `</a></li>`);
             if (i === currentPage) {
                 pageItem.addClass("active");
             }
@@ -272,7 +240,7 @@ $(document).ready(function () {
             currentPage = parseInt($(this).text());
             renderExamples();
             renderPagination();
-            window.location.hash = `page=${currentPage}`;
+            window.location.hash = `page=` + currentPage;
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     }

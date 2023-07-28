@@ -6,6 +6,7 @@ function show_task() {
 	`
 	document.getElementById('toy_page').style.display = "none";
     document.getElementById('task_page').style.display = "";
+	window.location.hash = `page=1` 
 
 }
 

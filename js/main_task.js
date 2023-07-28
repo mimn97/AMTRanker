@@ -74,16 +74,16 @@ $(document).ready(function () {
                 exampleHtml += `<span class="badge bg-secondary text-light text-uppercase">Instruction</span><br /> `
                 if(showGoldLabels) {
                     gold_label = example['gold_label'] || 'Reference';
-                    exampleHtml += `<span class="badge bg-secondary text-light text-uppercase">${gold_label}</span><br /> `
+                    exampleHtml += `<span class="badge bg-secondary text-light text-uppercase">` + gold_label + `</span><br />`
                 }
-                exampleHtml += `${example['instruction']}</div></div>`;
+                exampleHtml += (example['instruction'] + `</div></div>`);
                 
                 exampleHtml += `<div class="container reference"><div class="p-3 rounded">`
                 exampleHtml += `<span class="badge bg-secondary text-light text-uppercase">Reference</span><br /> `
-                exampleHtml += `${example['reference']}</div></div>`;
+                exampleHtml += (example['reference'] + `</div></div>`);
             }
             exampleHtml += `<div class="container example">`;
-            exampleHtml += `<ul class="list-group sortable" data-example-index="${exampleIndex}">`;
+            exampleHtml += `<ul class="list-group sortable" data-example-index="` + exampleIndex + `">`;
 
             // exampleHtml += `
             //     <li class="list-group-item black-bar" data-method="black-bar">
@@ -111,25 +111,25 @@ $(document).ready(function () {
                                 </div>
                             </li>`;
                     } else {
-                        exampleHtml += `
-                        <li class="list-group-item ${className}" data-method="${method}">
-                            <div class="row">
-                            <div class="col-xs-auto"><span class="rank-number badge rounded-pill text-light">${method}</span></div>
-                            <div class="col">${example[method]}</div>
-                            </div>
-                        </li>`;
+                        exampleHtml += '<li class="list-group-item ' + className + '" data-method="' + method + '">';
+                        exampleHtml += '    <div class="row">';
+                        exampleHtml += '        <div class="col-xs-auto"><span class="rank-number badge rounded-pill text-light">'+ method + '</span></div>';
+                        exampleHtml += '        <div class="col">';
+                        exampleHtml += '            ' + example[method] + '</div>';
+                        exampleHtml += '        </div>';
+                        exampleHtml += '</li>';
                     }
                 }
                 else {
                     exampleHtml += `
-                    <li class="list-group-item ${className}" data-method="${method}">
-                        <div class="row">
-                        <div class="col-xs-auto">
-                        <input type="text" class="form-control form-control-sm rank-number-input rounded text-light" value="${randomizedRanking[idx]}" />
-                        </div>
-                        <div class="col">${example[method]}</div>
-                        </div>
-                    </li>`;
+                        <li class="list-group-item ` + className + `" data-method="` + method + `">
+                            <div class="row">
+                                <div class="col-xs-auto">
+                                    <input type="text" class="form-control form-control-sm rank-number-input rounded text-light" value="` + randomizedRanking[idx] + `" />
+                                </div>
+                                <div class="col">` + example[method] + `</div>
+                            </div>
+                        </li>`;
                 }
             });
             exampleHtml += `</ul></div>`;
@@ -210,7 +210,7 @@ $(document).ready(function () {
         pagination_task.empty();
 
         for (let i = 1; i <= totalPages_task; i++) {
-            const pageItem = $(`<li class="page-item"><a class="page-link" href="#page=${i}">${i}</a></li>`);
+            const pageItem = $(`<li class="page-item"><a class="page-link" href="#page=` + i + `">` + i + `</a></li>`);
             if (i === currentPage_task) {
                 pageItem.addClass("active");
             }
@@ -244,7 +244,7 @@ $(document).ready(function () {
         $("#save-button").on("click", saveToTurker);
         $("#clear-storage-button").on("click", clearStorage);
         
-        window.collectedData = collectedData
+        window.collectedData = collectedData;
     }
 
     init_task();
