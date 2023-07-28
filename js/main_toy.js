@@ -11,21 +11,12 @@ $(document).ready(function () {
         
     let collectedData = [];
     let currentPage = 1;
-    
-    function renderInstructions() {
-        if(useDraggableInterface) {
-            var instructions = instructions_draggable;
-        }
-        else {
-            var instructions = instructions_inputtable;
-        }
-        const instructionsContainer = $("#instructions");
-        instructionsContainer.empty();
-        instHtml = ``;
-        instructions.forEach((instruction, index) => {
-            instHtml += `<li>${instruction}</li>`;
-        });
-        instructionsContainer.append(instHtml);
+
+    const hash = window.location.hash;
+    const pageRegex = /page=(\d+)/;
+    if (hash && pageRegex.test(hash)) {
+        const match = hash.match(pageRegex);
+        currentPage = parseInt(match[1]);
     }
 
     function shuffleArray(array) {
@@ -215,7 +206,6 @@ $(document).ready(function () {
         }
     }
 
-    
     function saveToTurker() {
         const jsonData = JSON.stringify(collectedData);
         const inputElement = document.getElementById('jsonDataInput-toy');
@@ -253,12 +243,11 @@ $(document).ready(function () {
     }
 
     function init() {
-        renderInstructions();
         renderExamples();
         renderPagination();
 
         // Initialize event listeners for ranking and pagination...
-        $("#save-button").on("click", saveToTurker);
+        $("#task-button").on("click", saveToTurker);
         $("#clear-storage-button").on("click", clearStorage);
         
         window.collectedData = collectedData
