@@ -1,4 +1,4 @@
-$(document).ready(function () {
+
     // let useDraggableInterface = $('#interface-type').val() === "draggable";
     const useDraggableInterface = true;
 
@@ -9,25 +9,9 @@ $(document).ready(function () {
     const showGoldLabels = false;
     const pageSize = 1;
         
-    let collectedData = [];
-    let currentPage = 1;
+    let collectedData_toy= [];
+    let currentPage_toy = 1;
     
-    function renderInstructions() {
-        if(useDraggableInterface) {
-            var instructions = instructions_draggable;
-        }
-        else {
-            var instructions = instructions_inputtable;
-        }
-        const instructionsContainer = $("#instructions");
-        instructionsContainer.empty();
-        instHtml = ``;
-        instructions.forEach((instruction, index) => {
-            instHtml += `<li>${instruction}</li>`;
-        });
-        instructionsContainer.append(instHtml);
-    }
-
     function shuffleArray(array) {
         for (let i = array.length - 1; i > 1; i--) {
             const j = Math.floor(Math.random() * (i + 1));
@@ -35,7 +19,6 @@ $(document).ready(function () {
                 [array[i], array[j]] = [array[j], array[i]];
             }
         }
-        console.log(array)
         return array;
     }
 
@@ -47,16 +30,18 @@ $(document).ready(function () {
         return array;
     }
 
-    function renderExamples() {
-        const start = (currentPage - 1) * pageSize;
-        const end = currentPage * pageSize;
-        const currentExamples = examples_toy.slice(start, end);
+    function renderExamples_toy() {
+        const start = (currentPage_toy - 1) * pageSize;
+        console.log('rendering example toy')
+        const end = currentPage_toy * pageSize;
+        const currentExamples_toy = examples_toy.slice(start, end);
         let numMethods = 0;
 
-        const exampleContainer = $("#example-container-toy");
-        exampleContainer.empty();
+        const exampleContainer_toy = $("#example-container-toy");
+        exampleContainer_toy.empty();
 
-        currentExamples.forEach((example, index) => {
+        currentExamples_toy.forEach((example, index) => {
+            console.log(example)
             const exampleIndex = start + index;
             
             let savedMethods = null;
@@ -85,30 +70,22 @@ $(document).ready(function () {
            
 
             let className = "methodAnon";
-            let exampleHtml = ``;
+            let exampleHtml_toy = ``;
             if(showReferences){
-                exampleHtml += `<div class="container instruction"><div class="p-2 rounded">`
-                exampleHtml += `<span class="badge bg-secondary text-light text-uppercase">Instruction</span><br /> `
+                exampleHtml_toy += `<div class="container instruction"><div class="p-2 rounded">`
+                exampleHtml_toy += `<span class="badge bg-secondary text-light text-uppercase">Instruction</span><br /> `
                 if(showGoldLabels) {
                     gold_label = example['gold_label'] || 'Reference';
-                    exampleHtml += `<span class="badge bg-secondary text-light text-uppercase">${gold_label}</span><br /> `
+                    exampleHtml_toy += `<span class="badge bg-secondary text-light text-uppercase">` + gold_label + `</span><br />`
                 }
-                exampleHtml += `${example['instruction']}</div></div>`;
+                exampleHtml_toy += (example['instruction'] + `</div></div>`);
                 
-                exampleHtml += `<div class="container reference"><div class="p-3 rounded">`
-                exampleHtml += `<span class="badge bg-secondary text-light text-uppercase">Reference</span><br /> `
-                exampleHtml += `${example['reference']}</div></div>`;
+                exampleHtml_toy += `<div class="container reference"><div class="p-3 rounded">`
+                exampleHtml_toy += `<span class="badge bg-secondary text-light text-uppercase">Reference</span><br /> `
+                exampleHtml_toy += (example['reference'] + `</div></div>`);
             }
-            exampleHtml += `<div class="container example">`;
-            exampleHtml += `<ul class="list-group sortable" data-example-index="${exampleIndex}">`;
-
-            // exampleHtml += `
-            //     <li class="list-group-item black-bar" data-method="black-bar">
-            //         <div class="row">
-            //             <div class="col-xs-auto"><span class="rank-number badge rounded-pill text-light"></span></div>
-            //             <div class="col black-bar-content"></div>
-            //         </div>
-            //     </li>`;
+            exampleHtml_toy += `<div class="container example">`;
+            exampleHtml_toy += `<ul class="list-group sortable" data-example-index="` + exampleIndex + `">`;
 
             randomizedMethods.forEach((method, idx) => {
                 if(colorizeBoxes){
@@ -121,24 +98,24 @@ $(document).ready(function () {
                 }
                 if(useDraggableInterface) {
                     if (method == "black-bar") {
-                        exampleHtml += `
+                        exampleHtml_toy += `
                             <li class="list-group-item black-bar" data-method="black-bar">
                                 <div class="row">
                                     <div class="col black-bar-content"></div>
                                 </div>
                             </li>`;
                     } else {
-                        exampleHtml += '<li class="list-group-item ' + className + '" data-method="' + method + '">';
-                        exampleHtml += '    <div class="row">';
-                        exampleHtml += '        <div class="col-xs-auto"><span class="rank-number badge rounded-pill text-light">'+ method + '</span></div>';
-                        exampleHtml += '        <div class="col">';
-                        exampleHtml += '            ' + example[method] + '</div>';
-                        exampleHtml += '        </div>';
-                        exampleHtml += '</li>';
+                        exampleHtml_toy += '<li class="list-group-item ' + className + '" data-method="' + method + '">';
+                        exampleHtml_toy += '    <div class="row">';
+                        exampleHtml_toy += '        <div class="col-xs-auto"><span class="rank-number badge rounded-pill text-light">'+ method + '</span></div>';
+                        exampleHtml_toy += '        <div class="col">';
+                        exampleHtml_toy += '            ' + example[method] + '</div>';
+                        exampleHtml_toy += '        </div>';
+                        exampleHtml_toy += '</li>';
                     }
                 }
                 else {
-                    exampleHtml += `
+                    exampleHtml_toy += `
                     <li class="list-group-item ` + className + `" data-method="` + method + `">
                         <div class="row">
                             <div class="col-xs-auto">
@@ -149,10 +126,10 @@ $(document).ready(function () {
                     </li>`;
             }
             });
-            exampleHtml += `</ul></div>`;
-            exampleContainer.append(exampleHtml);
+            exampleHtml_toy += `</ul></div>`;
+            exampleContainer_toy.append(exampleHtml_toy);
 
-            handleRanking(exampleIndex, randomizedMethods, randomizedRanking);
+            handleRanking_toy(exampleIndex, randomizedMethods, randomizedRanking);
         });
 
 
@@ -169,7 +146,7 @@ $(document).ready(function () {
                     let ranking = $(this).find('.rank-number').map(function(){
                         return parseInt($(this).html());
                     }).get();
-                    handleRanking(exampleIndex, methods, ranking);
+                    handleRanking_toy(exampleIndex, methods, ranking);
                 },
             });
         }
@@ -190,80 +167,98 @@ $(document).ready(function () {
                 }
                 else{
                     $(this).css("border", "0px");
-                    handleRanking(exampleIndex, methods, ranking);
+                    handleRanking_toy(exampleIndex, methods, ranking);
                 }
             });
         }
     }
 
-    function handleRanking(exampleIndex, methods, ranking) {
-        const data = {
+    function handleRanking_toy(exampleIndex, methods, ranking) {
+        const toy_data = {
             exampleIndex: exampleIndex,
             methods: methods,
             ranking: ranking,
             timestamp: new Date().toISOString(),
         };
-        collectedData[exampleIndex] = data;
+        collectedData_toy[exampleIndex] = toy_data;
 
         // Save data to a local file asynchronously
         if (window.localStorage) {
             const key = `example-` +exampleIndex;
-            const value = JSON.stringify(data);
+            const value = JSON.stringify(toy_data);
             localStorage.setItem(key, value);
         } else {
             console.error("Local storage is not supported by your browser.");
         }
     }
-
     
-    function saveToTurker() {
-        const jsonData = JSON.stringify(collectedData);
+    function saveToTurker_toy() {
+        const jsonData = JSON.stringify(collectedData_toy);
         const inputElement = document.getElementById('jsonDataInput-toy');
         inputElement.value = jsonData;
     }
 
-    function renderPagination() {
-        const totalPages = Math.ceil(examples_toy.length / pageSize);
-        const pagination = $("#pagination-toy");
-        pagination.empty();
+    function renderPagination_toy() {
+        const totalPages_toy = Math.ceil(examples_toy.length / pageSize);
+        const pagination_toy = $("#pagination-toy");
+        pagination_toy.empty();
 
-        for (let i = 1; i <= totalPages; i++) {
-            const pageItem = $(`<li class="page-item"><a class="page-link" href="#page=` + i + `">` + i + `</a></li>`);
-            if (i === currentPage) {
-                pageItem.addClass("active");
+        for (let i = 1; i <= totalPages_toy; i++) {
+            const pageItem_toy = $(`<li class="page-item"><a class="page-link" href="#page=` + i + `">` + i + `</a></li>`);
+            if (i === currentPage_toy) {
+                pageItem_toy.addClass("active");
             }
-            pagination.append(pageItem);
+            pagination_toy.append(pageItem_toy);
         }
 
         $(".page-link").on("click", function (e) {
+            localStorage.clear();
             e.preventDefault();
-            currentPage = parseInt($(this).text());
-            renderExamples();
-            renderPagination();
-            window.location.hash = `page=` + currentPage;
+            currentPage_toy = parseInt($(this).text());
+            renderExamples_toy();
+            renderPagination_toy();
+            window.location.hash = `page=` + currentPage_toy;
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     }
+ 
+    function init_toy() {
 
-    function clearStorage() {
-        const confirmed = confirm("Are you sure you want to clear the local storage? This action cannot be undone.");
-        if (confirmed && window.localStorage) {
-            localStorage.clear();
-        }
-    }
-
-    function init() {
-        renderInstructions();
-        renderExamples();
-        renderPagination();
+        renderExamples_toy();
+        renderPagination_toy();
 
         // Initialize event listeners for ranking and pagination...
-        $("#save-button").on("click", saveToTurker);
-        $("#clear-storage-button").on("click", clearStorage);
-        
-        window.collectedData = collectedData
+        $("#task-button").on("click", saveToTurker_toy);
     }
 
-    init();
-});
- 
+    // init_toy();
+
+
+function run_toy() {
+    document.getElementById('instruction_page').style.display = "none";
+	document.getElementById('toy_page').style.display = "";
+	const messageContainer = document.getElementById("toy_page_head");
+	messageContainer.innerHTML = `
+
+	<br><h2>Work Session</h2> <br>
+	<h4> Please rank the two toy examples as given below. Your answers will be checked later for the approval. </h4> 
+    <p>
+    To rank outputs, <b style="color:blue">follow these steps: </b> <br>
+    <ol>
+        <li> Read thoughtfully each of system answers in the stack. </li>
+        <li> Rank the quality of answer by each system from the top to the bottom, by <b style="color:red">dragging and dropping the system with most quality of answer to the top, 
+        followed by the second most one, and so on. </b> Then, you will place the least to the bottom. 
+        Note that you can always swap a former answer that have been rated with the latter one, if the latter sounds better. </li>
+        <li> Drag and drop <b>the black bar</b> <b style="color:red">right below</b> the answer that aligns at least with the instruction and the reference. The bar works as a "threshold." </li>
+        <li>After ranking all answers, then click to the <b style="color:blue">next page button</b>. </li>
+    </ol>
+    </p>
+    <br>
+    <p> <b style='color:red'> Warning: </b> <b>Please make sure to click each page button more than twice before you start</b>. There is a likely technical bug in the interface. </p>
+	<br>
+    `
+	init_toy();
+}
+
+
+// run_toy();

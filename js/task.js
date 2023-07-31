@@ -1,13 +1,11 @@
-function show_task() {
-	const messageContainer = document.getElementById("task_page");
-	messageContainer.innerHTML = `
+// function run_task() {
+// 	const messageContainer = document.getElementById("task_page_head");
+// 	messageContainer.innerHTML = `
 
-	<br><h2>Task Session</h2>
-	`
-	document.getElementById('toy_page').style.display = "none";
-    document.getElementById('task_page').style.display = "";
-	window.location.hash = `page=1` 
+// 	<br><h2>Task Session</h2>
+// 	<p> It's a task page. </p>
+// 	`
+// 	// init_task();
+// }
 
-}
-
-show_task();
+// run_task();

@@ -1,37 +1,28 @@
-$(document).ready(function () {
-    const useDraggableInterface = true;
-
-    const colorizeBoxes = true;
-    const colorizePerMethod = true;
-    const showReferences = true;
-    const shuffleMethods = true;
-    const showGoldLabels = false;
-    const pageSize = 1;
-                
-    let collectedData = [];
+    let collectedData_task = [];
     let currentPage_task = 1;
 
-    function shuffleArray(array) {
-        for (let i = array.length - 1; i > 1; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            if (j != 0) { 
-                [array[i], array[j]] = [array[j], array[i]];
-            }
-        }
-        console.log(array)
-        return array;
-    }
+    // function shuffleArray(array) {
+    //     for (let i = array.length - 1; i > 1; i--) {
+    //         const j = Math.floor(Math.random() * (i + 1));
+    //         if (j != 0) { 
+    //             [array[i], array[j]] = [array[j], array[i]];
+    //         }
+    //     }
+    //     console.log(array)
+    //     return array;
+    // }
 
-    function removeItemFromArray(array, item){
-        let index = array.indexOf(item);
-        if (index !== -1) {
-            array.splice(index, 1);
-        }
-        return array;
-    }
+    // function removeItemFromArray(array, item){
+    //     let index = array.indexOf(item);
+    //     if (index !== -1) {
+    //         array.splice(index, 1);
+    //     }
+    //     return array;
+    // }
 
     function renderExamples_task() {
         const start = (currentPage_task - 1) * pageSize;
+        console.log('rendering example task')
         const end = currentPage_task * pageSize;
         const currentExamples_task = examples_task.slice(start, end);
         let numMethods = 0;
@@ -186,7 +177,7 @@ $(document).ready(function () {
             ranking: ranking,
             timestamp: new Date().toISOString(),
         };
-        collectedData[exampleIndex] = data;
+        collectedData_task[exampleIndex] = data;
 
         // Save data to a local file asynchronously
         if (window.localStorage) {
@@ -199,9 +190,13 @@ $(document).ready(function () {
     }
     
     function saveToTurker() {
-        const jsonData = JSON.stringify(collectedData);
-        const inputElement = document.getElementById('jsonDataInput-task');
-        inputElement.value = jsonData;
+        const jsonData_toy = JSON.stringify(collectedData_toy);
+        const inputElement_toy = document.getElementById('jsonDataInput-toy');
+        inputElement_toy.value = jsonData_toy;
+
+        const jsonData_task = JSON.stringify(collectedData_task);
+        const inputElement_task = document.getElementById('jsonDataInput-task');
+        inputElement_task.value = jsonData_task;
     }
 
     function renderPagination_task() {
@@ -223,29 +218,37 @@ $(document).ready(function () {
             currentPage_task = parseInt($(this).text());
             renderExamples_task();
             renderPagination_task();
-            window.location.hash = `page=${currentPage_task}`;
+            window.location.hash = `page=` + currentPage_task;
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     }
 
-    function clearStorage() {
-        const confirmed = confirm("Are you sure you want to clear the local storage? This action cannot be undone.");
-        if (confirmed && window.localStorage) {
-            localStorage.clear();
-        }
-    }
-
     function init_task() {
-        localStorage.clear();
+        console.log('running init_task')
+        // localStorage.clear();
         renderExamples_task();
         renderPagination_task();
 
         // Initialize event listeners for ranking and pagination...
         $("#save-button").on("click", saveToTurker);
-        $("#clear-storage-button").on("click", clearStorage);
-        
-        window.collectedData = collectedData;
     }
 
-    init_task();
-});
+    // init_task();
+
+
+    function run_task() {
+        document.getElementById('toy_page').style.display = "none";
+        document.getElementById('task_page').style.display = "";
+        const messageContainer = document.getElementById("task_page_head");
+        messageContainer.innerHTML = `
+    
+        <br><h2>Task Session</h2>
+        <br>
+        <p> You are given the following five examples. Unlike toy session, there is no "correct answer." Please provide your own insights into ranking those examples based on your preference. </p>
+        <p> <b style='color:red'> Warning: </b> <b>Please make sure to click each page button more than twice before you start</b>. There is a likely technical bug in the interface. </p>
+
+        `
+        init_task();
+    }
+    
+    // run_task();
