@@ -254,7 +254,7 @@ function run_toy() {
     </ol>
     </p>
     <br>
-    <p> <b style='color:red'> Warning: </b> <b>Please make sure to click each page button more than twice before you start</b>. There is a likely technical bug in the interface. </p>
+    <p> <b style='color:red'> Warning: </b> <b>Please only click Submit Results button when you finish ranking all examples</b>. </p>
 	<br>
     `
 	init_toy();
