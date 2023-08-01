@@ -254,7 +254,7 @@ function run_toy() {
     </ol>
     </p>
     <br>
-    <p> <b style='color:red'> Warning: </b> <b>Please only click Submit Results button when you finish ranking all examples</b>. </p>
+    <p> <b style='color:red'> Warning: </b> <b>Please only click Submit Results button when you finish ranking all examples in the last page 5</b>. </p>
 	<br>
     `
 	init_toy();
