@@ -14,6 +14,7 @@ function show_instruction() {
 			<li>(1) which answer sounds better reasonable with respect to the instruction question, and </li> 
 			<li>(2) whether each answer aligns well with the reference sentence. (Please note that the reference answer is one possible answer to the instruction question.) </li>
 		</ul>
+		<hr>
 		
 		<p> Here is one <b>toy example</b> to walk you through the entire system: 
 
@@ -30,6 +31,7 @@ function show_instruction() {
 		</p>
 
 		<br>
+		<hr>
 		<p>
 		<b style="color:blue">Next steps</b> are as follows: <br>
 		<ol>
@@ -42,7 +44,7 @@ function show_instruction() {
 
 		</ol>
 		</p>
-		
+		<hr>
 		<p> Here are some attempts you may do to rank the answers: </p>
 
 		<p> 
@@ -67,7 +69,7 @@ function show_instruction() {
 
 	<button id="start_button" class="btn btn-primary" onclick="run_toy()">Start Toy Session</button>
 	
-	<hr/>`
+	`
 
 	document.getElementById('instruction_page').style.display = "";
 	document.getElementById('toy_page').style.display = "none";
