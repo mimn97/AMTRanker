@@ -11,9 +11,11 @@ function show_instruction() {
 		</p>
 		<p> For each instruction, your task is to <b>rank those AI-generated answers by your preference,</b> in terms of the following points:
 		<ul>
-			<li>(1) which answer sounds better reasonable with respect to the instruction question, and </li> 
-			<li>(2) whether each answer aligns well with the reference sentence. (Please note that the reference answer is one possible answer to the instruction question.) </li>
+			<li>(1) which answer sounds better <b>fluent</b> and <b>reasonable</b> with respect to the instruction question, and </li> 
+			<li>(2) which answer <b>aligns better</b> with the reference sentence. (Please note that the reference answer is one possible answer to the instruction question.) </li>
+			<li>(3) which answer conveys <b>factual</b> information. (You are allowed to search the fact on <b>Google</b>.) </li>
 		</ul>
+
 		<hr>
 		
 		<p> Here is one <b>toy example</b> to walk you through the entire system: 
