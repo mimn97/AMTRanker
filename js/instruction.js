@@ -64,10 +64,10 @@ function show_instruction() {
 		After finishing ranking all those five examples at the last page, you will <b> click the submit button </b> that let you submit all your annotations. 
 	
 	<hr>	
-	Click <b style="color:blue">Start Toy Tasks</b> below to start.
+	Click <b style="color:blue">Start Tasks</b> below to start.
 	<br><br>
 
-	<button id="start_button" class="btn btn-primary" onclick="run_toy()">Start Toy Session</button>
+	<button id="start_button" class="btn btn-primary" onclick="run_toy()">Start Tasks</button>
 	
 	`
 
