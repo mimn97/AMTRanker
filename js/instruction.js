@@ -63,9 +63,7 @@ function show_instruction() {
 		You will be given <b>five examples</b>. in total for this work.
 		After finishing ranking all those five examples at the last page, you will <b> click the submit button </b> that let you submit all your annotations. 
 	
-	<hr>
-	For practice and quality check, you will be given two toy examples to get you play around with before completing real tasks. 
-	
+	<hr>	
 	Click <b style="color:blue">Start Toy Tasks</b> below to start.
 	<br><br>
 
