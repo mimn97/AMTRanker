@@ -241,7 +241,7 @@ function run_toy() {
 	messageContainer.innerHTML = `
 
 	<br><h2>Work Session</h2> <br>
-	<h4> Please rank the five toy examples as given below. Your answers will be checked later for the approval. </h4> 
+	<h4> Please rank the five examples as given below. Your answers will be checked later for the approval. </h4> 
     <p> Your task is to <b>rank those AI-generated answers by your preference,</b> in terms of the following points:
     <ul>
         <li>(1) which answer sounds better <b>fluent</b> and <b>reasonable</b> with respect to the instruction question, and </li> 
