@@ -40,7 +40,7 @@ function show_instruction() {
 			<li> Rank the quality of answer by each system from the top to the bottom, by <b style="color:red">dragging and dropping the system with most quality of answer to the top, 
 			followed by the second most one, and so on. </b> Then, you will place the least to the bottom. 
 			Note that you can always swap a former answer that have been rated with the latter one, if the latter sounds better. </li>
-			<li> <b style="color:red">[IMPORTANT]</b> Drag and drop <b>the black bar</b> <b style="color:red">right above</b> the answer(s) that is not relevant to the instruction sentence and does not sound reasonable. The bar works as a "threshold", which means that
+			<li> <b style="color:red">[IMPORTANT]</b> Drag and drop <b>the black bar</b> <b style="color:red">right above</b> the answer(s) that is not relevant to the instruction/reference sentences and does not sound reasonable. The bar works as a "threshold", which means that
 			<b>the answers below the black bar</b> will be considered as <b style="color:blue"><i>"non-reasonble" and "non-related"</i></b>. If you think all answers sound good, then you may place the black bar at the most bottom.</li>
 			<li>After ranking all answers, then click to the <b style="color:blue">next page</b>. </li>
 		</ol>
