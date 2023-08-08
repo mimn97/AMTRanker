@@ -13,7 +13,6 @@ function show_instruction() {
 		<ul>
 			<li>(1) which answer sounds better <b>fluent</b> and <b>reasonable</b> with respect to the instruction question, and </li> 
 			<li>(2) which answer <b>aligns better</b> with the reference sentence. (Please note that the reference answer is one possible answer to the instruction question.) </li>
-			<li>(3) which answer conveys <b>factual</b> information. (You are allowed to search the fact on <b>Google</b>.) </li>
 		</ul>
 
 		<hr>
@@ -41,7 +40,8 @@ function show_instruction() {
 			<li> Rank the quality of answer by each system from the top to the bottom, by <b style="color:red">dragging and dropping the system with most quality of answer to the top, 
 			followed by the second most one, and so on. </b> Then, you will place the least to the bottom. 
 			Note that you can always swap a former answer that have been rated with the latter one, if the latter sounds better. </li>
-			<li> Drag and drop <b>the black bar</b> <b style="color:red">right below</b> the answer that aligns at least with the instruction and the reference. The bar works as a "threshold." If you think all answers sound good, then you may place the black bar at the most bottom.</li>
+			<li> Drag and drop <b>the black bar</b> <b style="color:red">right above</b> the answer(s) that is not relevant to the instruction sentence. The bar works as a "threshold." 
+			The answers below the black bar will be considered as <b style="color:blue"><i>"non-reasonble" and "non-related"</i></b>. If you think all answers sound good, then you may place the black bar at the most bottom.</li>
 			<li>After ranking all answers, then click to the <b style="color:blue">next page</b>. </li>
 
 		</ol>
