@@ -246,7 +246,6 @@ function run_toy() {
     <ul>
         <li>(1) which answer sounds better <b>fluent</b> and <b>reasonable</b> with respect to the instruction question, and </li> 
         <li>(2) which answer <b>aligns better</b> with the reference sentence. (Please note that the reference answer is one possible answer to the instruction question.) </li>
-        <li>(3) which answer conveys <b>factual</b> information. (You are allowed to search the fact on <b>Google</b>.) </li>
     </ul>
     <p>
     To rank outputs, <b style="color:blue">follow these steps: </b> <br>
