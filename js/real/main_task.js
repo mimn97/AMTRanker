@@ -241,12 +241,12 @@ function run_toy() {
 	messageContainer.innerHTML = `
 
 	<br><h2>Work Session</h2> <br>
-	<h4> Please rank the five examples as given below. Your answers will be <b style="color:red">checked later for the approval</b> and for the <b style="color:red">qualification to the next task.</b>. </h4> 
+	<h4> Please rank the ten examples as given below. Your answers will be <b style="color:red">checked later for the approval</b> and for the <b style="color:red">qualification to the next task.</b>. </h4> 
     <hr>
     <p> Your task is to <b>rank those AI-generated answers by your preference,</b> in terms of the following points:
     <ul>
         <li>(1) which answer sounds better <b>fluent</b> and <b>reasonable</b> with respect to the instruction question, and </li> 
-        <li>(2) which answer <b>aligns better</b> with the reference sentence. (Please note that the reference answer is one possible answer to the instruction question.) </li>
+        <li>(2) which answer <b style='color:red'>aligns better</b> with the reference sentence. (Please note that the reference answer is one possible answer to the instruction question.) </li>
     </ul>
     <p>
     To rank outputs, <b style="color:blue">follow these steps: </b> <br>
@@ -261,7 +261,7 @@ function run_toy() {
     </ol>
     </p>
     <br>
-    <p> <b style='color:red'> Warning: </b> <b>Please only click Submit Results button when you finish ranking all examples in the last page 5</b>. </p>
+    <p> <b style='color:red'> Warning: </b> <b>Please only click Submit Results button when you finish ranking all examples in the last page 10</b>. </p>
     <br>
     `
 	init_toy();
