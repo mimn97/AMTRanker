@@ -58,7 +58,7 @@ function show_instruction() {
 			</figure>
 		</p>
 		<br>
-		You will be given <b>13 examples</b> in total for this work.
+		You will be given <b>12 examples</b> in total for this work.
 		After finishing ranking all those 13 examples at the last page, you will <b> click the submit button </b> that let you submit all your annotations. 
 
         <br><br>
