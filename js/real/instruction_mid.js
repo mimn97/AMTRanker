@@ -59,7 +59,7 @@ function show_instruction() {
 		</p>
 		<br>
 		You will be given <b>10 examples</b> in total for this work.
-		After finishing ranking all those 13 examples at the last page, you will <b> click the submit button </b> that let you submit all your annotations. 
+		After finishing ranking all those examples at the last page, you will <b> click the submit button </b> that let you submit all your annotations. 
 
         <br><br>
         <p><b style='color:blue'>IMPORTANT Notes:</b> While the instruction is same as the previous task, the difference is that for each example, there will be <b>more number of system outputs to be ranked (more than 5 that you did previously)</b>. 
