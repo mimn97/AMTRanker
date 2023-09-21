@@ -10,7 +10,7 @@ const A = [
         "instruction": "Did the 40th president of the United States forward lolcats to his friends?",
         "reference": "No. The 40th president of the United States was Ronald Reagan. Ronald Reagan died in 2004. The first recorded use of the term lolcat occurred in 2006.",
         "System A": " No, there is no evidence that the 40th president of the United States, Ronald Reagan, forwarded lolcats to his friends.",
-        "System B": " No, he did not.\n "         
+        "System B": " No, he didn't. \n"         
     },
     {
         "instruction": "Does Post Malone have a fear of needles?",

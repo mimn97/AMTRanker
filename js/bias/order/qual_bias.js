@@ -20,22 +20,21 @@ function show_qual() {
                 <li> <b>The instruction</b>: What would be some etiquette norms to keep in mind when invited to a business party? </li>
                 <li> <b>The reference</b>: Follow the dress code and be on time.</li>
             </ul>
-            <p> Here are two answers from System A and B, respectively: 
 
-            <table class="table table-bordered table-striped">
-            <thead>
-            <tr>
-                <th style="text-align: center; width: 200px;"> System A</th>
-                <th style="text-align: center; width: 200px;"> System B</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>Dress conventionally and professionally. Wear suites and ties for men, and business attire for women. </td>
-                <td>Begin your meal before the host starts. </td>
-            </tr>
-            </tbody>
-            </table>
+            <div id="systemA" class="mt-3" style="text-align:center;">
+                <p> First, Double-Click <b>System A</b> button to see the A's answer. </p>
+                <button id="qual_1_buttonA" class="btn btn-success" onclick="show_qual_answer('qual_1_buttonA','qual_1_systemA_answer', 'Dress conventionally and professionally. Wear suites and ties for men, and business attire for women.')"> 
+                    System A </button>
+                <div id="qual_1_systemA_answer" class="mt-3"></div>
+            </div>
+            <br>
+            <div id="systemB" class="mt-3"  style="text-align:center">
+                <p> And then, Double-Click <b>System B</b> button to see the B's answer. </p>
+                <button id="qual_1_buttonB" class="btn btn-info" onclick='show_qual_answer("qual_1_buttonB","qual_1_systemB_answer", "Begin your meal before the host starts.")'> 
+                    System B </button>
+                <div id="qual_1_systemB_answer" class="mt-3"></div>
+            </div>
+            <br><br>
 
             <p style="text-align: center">
             <mark>
@@ -61,22 +60,21 @@ function show_qual() {
                 <li> <b>The instruction</b>: What are the two ways that I can improve my writing skills in Spanish? </li>
                 <li> <b>The reference</b>: Take some online courses that teach writing skills in English, or read many Spanish books. </li>
             </ul>
-            <p> Here are two answers from System A and B, respectively: 
 
-            <table class="table table-bordered table-striped">
-            <thead>
-            <tr>
-                <th style="text-align: center; width: 200px;"> System A</th>
-                <th style="text-align: center; width: 200px;"> System B</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td> Read many books that are written in Spanish and hone your speaking skill about pronunciation. </td>
-                <td> You may take a tutoring class that teaches the professional writing in Spanish.</td>
-            </tr>
-            </tbody>
-            </table>
+            <div id="systemA" class="mt-3" style="text-align:center;">
+                <p> First, Double-Click <b>System A</b> button to see the A's answer. </p>
+                <button id="qual_2_buttonA" class="btn btn-success" onclick="show_qual_answer('qual_2_buttonA','qual_2_systemA_answer', 'Read many books that are written in Spanish and hone your speaking skill about pronunciation.')"> 
+                    System A </button>
+                <div id="qual_2_systemA_answer" class="mt-3"></div>
+            </div>
+            <br>
+            <div id="systemB" class="mt-3"  style="text-align:center">
+                <p> And then, Double-Click <b>System B</b> button to see the B's answer. </p>
+                <button id="qual_2_buttonB" class="btn btn-info" onclick='show_qual_answer("qual_2_buttonB","qual_2_systemB_answer", "You may take a tutoring class that teaches the professional writing in Spanish.")'> 
+                    System B </button>
+                <div id="qual_2_systemB_answer" class="mt-3"></div>
+            </div>
+            <br><br>
 
             <p style="text-align: center">
             <mark>
@@ -102,23 +100,22 @@ function show_qual() {
                     <li> <b>The instruction</b>: When did Queen Elizabeth II of United Kingdom pass away? </li>
                     <li> <b>The reference</b>: She passed away on September 2022. </li>
                 </ul>
-                <p> Here are two answers from System A and B, respectively: 
-    
-                <table class="table table-bordered table-striped">
-                <thead>
-                <tr>
-                    <th style="text-align: center; width: 200px;"> System A</th>
-                    <th style="text-align: center; width: 200px;"> System B</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td> The Queen Elizabeth II of Great Britain died in 2022. </td>
-                    <td> Queen Elizabeth II of UK was born in 1926. </td>
-                </tr>
-                </tbody>
-                </table>
-    
+
+                <div id="systemA" class="mt-3" style="text-align:center;">
+                    <p> First, Double-Click <b>System A</b> button to see the A's answer. </p>
+                    <button id="qual_3_buttonA" class="btn btn-success" onclick="show_qual_answer('qual_3_buttonA','qual_3_systemA_answer', 'The Queen Elizabeth II of Great Britain died in 2022.')"> 
+                        System A </button>
+                    <div id="qual_3_systemA_answer" class="mt-3"></div>
+                </div>
+                <br>
+                <div id="systemB" class="mt-3"  style="text-align:center">
+                    <p> And then, Double-Click <b>System B</b> button to see the B's answer. </p>
+                    <button id="qual_3_buttonB" class="btn btn-info" onclick='show_qual_answer("qual_3_buttonB","qual_3_systemB_answer", "Queen Elizabeth II of UK was born in 1926.")'> 
+                        System B </button>
+                    <div id="qual_3_systemB_answer" class="mt-3"></div>
+                </div>
+                <br><br>
+
                 <p style="text-align: center">
                 <mark>
                 Please choose which system's answer aligns and cohere better with the instruction and reference sentences?
