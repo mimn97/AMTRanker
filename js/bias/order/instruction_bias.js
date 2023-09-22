@@ -59,7 +59,7 @@ function show_instruction() {
             <br><br>
             <p style="text-align: center">
             <mark>
-            Please choose which system's answer aligns and cohere better with the instruction and reference sentences?
+            <b>Please choose which system's answer aligns and cohere better with the instruction and reference sentences?</b>
             </mark>
             </p>
             <div style="text-align: center">
@@ -81,8 +81,9 @@ function show_instruction() {
 
         <hr>
 
-        <h2> Next Step </h2>
+        <h2> Next Step </h2> <br>
 
+        <h5> You will be given 50 instruction sets to answer. Please accept this work only if you can make sure to answer all of them thoroughly. Your answer will be verified later for the approval. </h4>
         <p> Next page will prompt you to complete a qualification round to <span style="color:red">check whether you correctly understand the instruction. </span> </p>
         </div>
 

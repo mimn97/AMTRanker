@@ -36,7 +36,7 @@ function show_qual() {
             </tr>
             </tbody>
             </table>
-
+            <h4 style="text-align:center"> Note: 85% of people believe that System B is better. </h4>
             <p style="text-align: center">
             <mark>
             Please choose which system's answer aligns and cohere better with the instruction and reference sentences?
@@ -77,7 +77,7 @@ function show_qual() {
             </tr>
             </tbody>
             </table>
-
+            <h4 style="text-align:center"> Note: 85% of people believe that System B is better. </h4>
             <p style="text-align: center">
             <mark>
             Please choose which system's answer aligns and cohere better with the instruction and reference sentences?
@@ -118,7 +118,7 @@ function show_qual() {
                 </tr>
                 </tbody>
                 </table>
-
+                <h4 style="text-align:center"> Note: 85% of people believe that System B is better. </h4>
                 <p style="text-align: center">
                 <mark>
                 Please choose which system's answer aligns and cohere better with the instruction and reference sentences?

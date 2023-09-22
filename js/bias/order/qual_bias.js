@@ -38,7 +38,7 @@ function show_qual() {
 
             <p style="text-align: center">
             <mark>
-            Please choose which system's answer aligns and cohere better with the instruction and reference sentences?
+            Please choose which system's answer aligns and cohere <b>better</b> with the instruction and reference sentences?
             </mark>
             </p>
             <div style="text-align: center">
@@ -78,7 +78,7 @@ function show_qual() {
 
             <p style="text-align: center">
             <mark>
-            Please choose which system's answer aligns and cohere better with the instruction and reference sentences?
+            Please choose which system's answer aligns and cohere <b>better</b> with the instruction and reference sentences?
             </mark>
             </p>
             <div style="text-align: center">
@@ -118,7 +118,7 @@ function show_qual() {
 
                 <p style="text-align: center">
                 <mark>
-                Please choose which system's answer aligns and cohere better with the instruction and reference sentences?
+                Please choose which system's answer aligns and cohere <b>better</b> with the instruction and reference sentences?
                 </mark>
                 </p>
                 <div style="text-align: center">

@@ -44,32 +44,8 @@ function show_instruction() {
             </tr>
             </tbody>
             </table>
-
-            <!-- <table class="table table-bordered">
-            <thead class="thead-light">
-                <tr>
-                <th style="text-align: center; width: 200px; scope=col">System A</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                <td style="text-align: center;">Include more vegetables and fruits in your meals.</td>
-                </tr>
-            </tbody>
-            </table>
-            <table class="table table-bordered">
-            <thead class="thead-light">
-                <tr>
-                <th style="text-align: center; width: 200px; scope=col">System B</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                <td style="text-align: center;">Eating healthy and sustainably can be a challenge, but it doesn't have to be. Eat more vegetables.</td>
-                </tr>
-            </tbody>
-            </table> -->
-
+            <h4 style="text-align:center">The coolest thing that System B can do is a 60 second handstand.</h4>
+            <br>
             <p style="text-align: center">
             <mark>
             Please choose which system's answer aligns and cohere better with the instruction and reference sentences?
@@ -96,6 +72,7 @@ function show_instruction() {
 
         <h2> Next Step </h2>
 
+        <h5> You will be given 50 instruction sets to answer. Please accept this work only if you can make sure to answer all of them thoroughly. Your answer will be verified later for the approval. </h4>
         <p> Next page will prompt you to complete a qualification round to <span style="color:red">check whether you correctly understand the instruction. </span> </p>
         </div>
 

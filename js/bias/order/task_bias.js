@@ -104,11 +104,38 @@ function startPages() {
     });
   }
 
-function showPage(index) {
+  function showPage(index) {
+    console.log("Attempting to show page:", index);
 
-    document.getElementById("page_"+currentPage).style.display = "none";
+    // Only run this check when NOT on the first page
+    if (currentPage !== 0) {
+        // Get the radio buttons from the CURRENT page
+        let radioA = document.getElementById("radioA_" + (currentPage + 1));
+        let radioB = document.getElementById("radioB_" + (currentPage + 1));
+
+        // Check if radioA and radioB are not null before checking their 'checked' properties
+        if ((radioA && !radioA.checked) && (radioB && !radioB.checked)) {
+            alert("Please make a selection before proceeding.");
+            return; // exit the function early
+        }
+    }
+
+    // Hide the current page
+    let currentDiv = document.getElementById("page_" + currentPage);
+    if (currentDiv) {
+        currentDiv.style.display = "none";
+    } else {
+        console.error("Couldn't find div for current page:", currentPage);
+    }
+
     // Show the new page
-    document.getElementById("page_"+index).style.display = "block";
+    let newDiv = document.getElementById("page_" + index);
+    if (newDiv) {
+        newDiv.style.display = "block";
+    } else {
+        console.error("Couldn't find div for new page:", index);
+    }
+
     // Update currentPage
     currentPage = index;
 }

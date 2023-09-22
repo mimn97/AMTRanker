@@ -36,7 +36,8 @@ function show_qual() {
             </tr>
             </tbody>
             </table>
-
+            <h4 style="text-align:center">The coolest thing that System A can do is a 60 second handstand.</h4>
+            <br>
             <p style="text-align: center">
             <mark>
             Please choose which system's answer aligns and cohere better with the instruction and reference sentences?
@@ -78,6 +79,8 @@ function show_qual() {
             </tbody>
             </table>
 
+            <h4 style="text-align:center">System A plays a lot of soccer and basketball.</h4>
+            <br>
             <p style="text-align: center">
             <mark>
             Please choose which system's answer aligns and cohere better with the instruction and reference sentences?
@@ -118,7 +121,9 @@ function show_qual() {
                 </tr>
                 </tbody>
                 </table>
-    
+
+                <h4 style="text-align:center">System B has been all around Europe two times.</h4>
+                <br>
                 <p style="text-align: center">
                 <mark>
                 Please choose which system's answer aligns and cohere better with the instruction and reference sentences?
