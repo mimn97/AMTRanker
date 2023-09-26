@@ -56,20 +56,21 @@ function startPages() {
     '</div>';
     // Create a new div for this page
     if (index != (A.length - 1)){
-        contentDiv.innerHTML +=     '<div style="text-align: center; font-size:20px">' +
-        'Click <b><span style="color:blue"> Next Page button </span></b> below to proceed to the next question set.' +
-        '<p style="color:red"> DO NOT CLICK SUBMIT BUTTON! </p>' +
-        '<label id="nextButton" class="btn btn-primary" onclick=showPage(' + (index + 1) + ')>Next Page</label>' +
-        '</div>';
-    }
-    else{
-        contentDiv.innerHTML += `
-        <br><br>
-        <div style="text-align: center; font-size:20px">
-        Click <b><span style="background-color:orange">Submit button</span></b> below to complete the HIT. Thank you. 
-        </div>
-      `;
-    }  
+      contentDiv.innerHTML +=     '<div style="text-align: center; font-size:20px">' + '<h6>Make sure to choose either A or B, before the next question.</h6>' + 
+      'Click <b><span style="color:blue"> Next Page button </span></b> below to proceed to the next question set.' +
+      '<p style="color:red"> DO NOT CLICK SUBMIT BUTTON! </p>' +
+      '<label id="nextButton" class="btn btn-primary" onclick=showPage(' + (index + 1) + ')>Next Page</label>' +
+      '</div>';
+  }
+  else{
+      contentDiv.innerHTML += `
+      <br><br>
+      <div style="text-align: center; font-size:20px">
+      <h6>Make sure to choose either A or B, before the next question.</h6>
+      Click <b><span style="background-color:orange">Submit button</span></b> below to complete the HIT. Thank you. 
+      </div>
+    `;
+  } 
     // Populate the div with your specific content
 
     // Append this new div to the content area
@@ -131,6 +132,26 @@ function showPage(index) {
 
     // Update currentPage
     currentPage = index;
+}
+
+function downloadInputs() {
+  const form = document.getElementById('amt_answers');
+  const formData = new FormData(form);
+
+  let collectedData = {};
+
+  for (let [key, value] of formData.entries()) {
+      collectedData[key] = value;
+  }
+
+  const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(collectedData, null, 4));
+  const downloadAnchor = document.createElement('a');
+  downloadAnchor.href = dataStr;
+  downloadAnchor.download = "inputs.json";
+
+  document.body.appendChild(downloadAnchor);
+  downloadAnchor.click();
+  document.body.removeChild(downloadAnchor);
 }
 
 

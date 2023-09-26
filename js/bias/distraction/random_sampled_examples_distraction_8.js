@@ -10,7 +10,7 @@ const A = [
         "Model B": "wizardlm",
         "real_A": "System B",
         "real_B": "System F",
-        "distractor": "System A has been all around Europe two times."
+        "distractor": "The coolest thing that System A can do is a 60 second handstand."
     },
     {
         "instruction_idx": 12,
@@ -36,7 +36,7 @@ const A = [
         "Model B": "mpt",
         "real_A": "System B",
         "real_B": "System F",
-        "distractor": "System B plays a lot of soccer and basketball."
+        "distractor": "System B has been all around Europe two times."
     },
     {
         "instruction_idx": 1,
@@ -49,7 +49,7 @@ const A = [
         "Model B": "alpaca",
         "real_A": "System B",
         "real_B": "System F",
-        "distractor": "System B has been all around Europe two times."
+        "distractor": "System B likes to eat apples and oranges."
     },
     {
         "instruction_idx": 5,
@@ -62,7 +62,7 @@ const A = [
         "Model B": "mpt",
         "real_A": "System B",
         "real_B": "System F",
-        "distractor": "The coolest thing that System B can do is a 60 second handstand."
+        "distractor": "System B has been all around Europe two times."
     },
     {
         "instruction_idx": 20,
@@ -75,7 +75,7 @@ const A = [
         "Model B": "baize",
         "real_A": "System B",
         "real_B": "System F",
-        "distractor": "System B plays a lot of soccer and basketball."
+        "distractor": "System B likes to eat apples and oranges."
     },
     {
         "instruction_idx": 23,
@@ -88,7 +88,7 @@ const A = [
         "Model B": "wizardlm",
         "real_A": "System B",
         "real_B": "System F",
-        "distractor": "System B plays a lot of soccer and basketball."
+        "distractor": "System B likes to eat apples and oranges."
     },
     {
         "instruction_idx": 19,
@@ -101,7 +101,7 @@ const A = [
         "Model B": "mpt",
         "real_A": "System B",
         "real_B": "System F",
-        "distractor": "System A has been all around Europe two times."
+        "distractor": "System A likes to eat apples and oranges."
     },
     {
         "instruction_idx": 7,
@@ -114,7 +114,7 @@ const A = [
         "Model B": "dolly",
         "real_A": "System B",
         "real_B": "System F",
-        "distractor": "System B plays a lot of soccer and basketball."
+        "distractor": "System B likes to eat apples and oranges."
     },
     {
         "instruction_idx": 16,
@@ -127,7 +127,7 @@ const A = [
         "Model B": "koala",
         "real_A": "System B",
         "real_B": "System F",
-        "distractor": "The coolest thing that System B can do is a 60 second handstand."
+        "distractor": "System B plays a lot of soccer and basketball."
     },
     {
         "instruction_idx": 13,
@@ -140,7 +140,7 @@ const A = [
         "Model B": "alpaca",
         "real_A": "System B",
         "real_B": "System F",
-        "distractor": "System A has been all around Europe two times."
+        "distractor": "System A likes to eat apples and oranges."
     },
     {
         "instruction_idx": 6,
@@ -153,7 +153,7 @@ const A = [
         "Model B": "cohere",
         "real_A": "System B",
         "real_B": "System F",
-        "distractor": "System A plays a lot of soccer and basketball."
+        "distractor": "System A likes to eat apples and oranges."
     },
     {
         "instruction_idx": 11,
@@ -166,7 +166,7 @@ const A = [
         "Model B": "redpajama",
         "real_A": "System B",
         "real_B": "System F",
-        "distractor": "System A has been all around Europe two times."
+        "distractor": "System A likes to eat apples and oranges."
     },
     {
         "instruction_idx": 20,
@@ -205,7 +205,7 @@ const A = [
         "Model B": "gpt4",
         "real_A": "System B",
         "real_B": "System F",
-        "distractor": "System A plays a lot of soccer and basketball."
+        "distractor": "The coolest thing that System A can do is a 60 second handstand."
     },
     {
         "instruction_idx": 7,
@@ -218,7 +218,7 @@ const A = [
         "Model B": "dolly",
         "real_A": "System B",
         "real_B": "System F",
-        "distractor": "System A likes to eat apples and oranges."
+        "distractor": "The coolest thing that System A can do is a 60 second handstand."
     },
     {
         "instruction_idx": 2,
@@ -231,7 +231,7 @@ const A = [
         "Model B": "baize",
         "real_A": "System B",
         "real_B": "System F",
-        "distractor": "System B plays a lot of soccer and basketball."
+        "distractor": "System B likes to eat apples and oranges."
     },
     {
         "instruction_idx": 11,
@@ -244,7 +244,7 @@ const A = [
         "Model B": "redpajama",
         "real_A": "System B",
         "real_B": "System F",
-        "distractor": "System B plays a lot of soccer and basketball."
+        "distractor": "System B likes to eat apples and oranges."
     },
     {
         "instruction_idx": 2,
@@ -270,7 +270,7 @@ const A = [
         "Model B": "mpt",
         "real_A": "System B",
         "real_B": "System F",
-        "distractor": "The coolest thing that System A can do is a 60 second handstand."
+        "distractor": "System A likes to eat apples and oranges."
     },
     {
         "instruction_idx": 0,
@@ -283,7 +283,7 @@ const A = [
         "Model B": "cohere",
         "real_A": "System B",
         "real_B": "System F",
-        "distractor": "System A likes to eat apples and oranges."
+        "distractor": "The coolest thing that System A can do is a 60 second handstand."
     },
     {
         "instruction_idx": 14,
@@ -296,7 +296,7 @@ const A = [
         "Model B": "vicuna",
         "real_A": "System B",
         "real_B": "System F",
-        "distractor": "System B has been all around Europe two times."
+        "distractor": "System B likes to eat apples and oranges."
     },
     {
         "instruction_idx": 15,
@@ -322,7 +322,7 @@ const A = [
         "Model B": "chatgpt",
         "real_A": "System B",
         "real_B": "System F",
-        "distractor": "System A has been all around Europe two times."
+        "distractor": "The coolest thing that System A can do is a 60 second handstand."
     },
     {
         "instruction_idx": 10,
@@ -335,7 +335,7 @@ const A = [
         "Model B": "cohere",
         "real_A": "System B",
         "real_B": "System F",
-        "distractor": "System A has been all around Europe two times."
+        "distractor": "System A plays a lot of soccer and basketball."
     },
     {
         "instruction_idx": 1,
@@ -348,7 +348,7 @@ const A = [
         "Model B": "alpaca",
         "real_A": "System B",
         "real_B": "System F",
-        "distractor": "The coolest thing that System A can do is a 60 second handstand."
+        "distractor": "System A likes to eat apples and oranges."
     },
     {
         "instruction_idx": 0,
@@ -374,7 +374,7 @@ const A = [
         "Model B": "alpaca",
         "real_A": "System B",
         "real_B": "System F",
-        "distractor": "System B has been all around Europe two times."
+        "distractor": "The coolest thing that System B can do is a 60 second handstand."
     },
     {
         "instruction_idx": 14,
@@ -400,7 +400,7 @@ const A = [
         "Model B": "llama",
         "real_A": "System B",
         "real_B": "System F",
-        "distractor": "System A has been all around Europe two times."
+        "distractor": "System A likes to eat apples and oranges."
     },
     {
         "instruction_idx": 15,
@@ -426,7 +426,7 @@ const A = [
         "Model B": "koala",
         "real_A": "System B",
         "real_B": "System F",
-        "distractor": "The coolest thing that System A can do is a 60 second handstand."
+        "distractor": "System A has been all around Europe two times."
     },
     {
         "instruction_idx": 21,
@@ -439,7 +439,7 @@ const A = [
         "Model B": "openassist",
         "real_A": "System B",
         "real_B": "System F",
-        "distractor": "System B has been all around Europe two times."
+        "distractor": "System B likes to eat apples and oranges."
     },
     {
         "instruction_idx": 18,
@@ -452,7 +452,7 @@ const A = [
         "Model B": "llama",
         "real_A": "System B",
         "real_B": "System F",
-        "distractor": "The coolest thing that System A can do is a 60 second handstand."
+        "distractor": "System A likes to eat apples and oranges."
     },
     {
         "instruction_idx": 10,
@@ -465,7 +465,7 @@ const A = [
         "Model B": "cohere",
         "real_A": "System B",
         "real_B": "System F",
-        "distractor": "System B plays a lot of soccer and basketball."
+        "distractor": "System B likes to eat apples and oranges."
     },
     {
         "instruction_idx": 6,
@@ -491,7 +491,7 @@ const A = [
         "Model B": "falcon",
         "real_A": "System B",
         "real_B": "System F",
-        "distractor": "System A has been all around Europe two times."
+        "distractor": "The coolest thing that System A can do is a 60 second handstand."
     },
     {
         "instruction_idx": 8,
@@ -504,7 +504,7 @@ const A = [
         "Model B": "wizardlm",
         "real_A": "System B",
         "real_B": "System F",
-        "distractor": "System B likes to eat apples and oranges."
+        "distractor": "The coolest thing that System B can do is a 60 second handstand."
     },
     {
         "instruction_idx": 4,
@@ -517,7 +517,7 @@ const A = [
         "Model B": "instructgpt",
         "real_A": "System B",
         "real_B": "System F",
-        "distractor": "System B plays a lot of soccer and basketball."
+        "distractor": "System B likes to eat apples and oranges."
     },
     {
         "instruction_idx": 24,
@@ -530,7 +530,7 @@ const A = [
         "Model B": "falcon",
         "real_A": "System B",
         "real_B": "System F",
-        "distractor": "System A plays a lot of soccer and basketball."
+        "distractor": "The coolest thing that System A can do is a 60 second handstand."
     },
     {
         "instruction_idx": 22,
@@ -543,7 +543,7 @@ const A = [
         "Model B": "llama",
         "real_A": "System B",
         "real_B": "System F",
-        "distractor": "System B likes to eat apples and oranges."
+        "distractor": "The coolest thing that System B can do is a 60 second handstand."
     },
     {
         "instruction_idx": 3,
@@ -556,7 +556,7 @@ const A = [
         "Model B": "wizardlm",
         "real_A": "System B",
         "real_B": "System F",
-        "distractor": "The coolest thing that System B can do is a 60 second handstand."
+        "distractor": "System B has been all around Europe two times."
     },
     {
         "instruction_idx": 8,
@@ -569,7 +569,7 @@ const A = [
         "Model B": "wizardlm",
         "real_A": "System B",
         "real_B": "System F",
-        "distractor": "System A plays a lot of soccer and basketball."
+        "distractor": "System A has been all around Europe two times."
     },
     {
         "instruction_idx": 4,
@@ -582,7 +582,7 @@ const A = [
         "Model B": "instructgpt",
         "real_A": "System B",
         "real_B": "System F",
-        "distractor": "System A plays a lot of soccer and basketball."
+        "distractor": "System A likes to eat apples and oranges."
     },
     {
         "instruction_idx": 3,
@@ -595,7 +595,7 @@ const A = [
         "Model B": "wizardlm",
         "real_A": "System B",
         "real_B": "System F",
-        "distractor": "The coolest thing that System A can do is a 60 second handstand."
+        "distractor": "System A has been all around Europe two times."
     },
     {
         "instruction_idx": 24,
@@ -608,7 +608,7 @@ const A = [
         "Model B": "falcon",
         "real_A": "System B",
         "real_B": "System F",
-        "distractor": "The coolest thing that System B can do is a 60 second handstand."
+        "distractor": "System B likes to eat apples and oranges."
     },
     {
         "instruction_idx": 9,
@@ -634,7 +634,7 @@ const A = [
         "Model B": "chatgpt",
         "real_A": "System B",
         "real_B": "System F",
-        "distractor": "System B plays a lot of soccer and basketball."
+        "distractor": "System B likes to eat apples and oranges."
     },
     {
         "instruction_idx": 21,

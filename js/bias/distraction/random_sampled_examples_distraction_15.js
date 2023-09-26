@@ -10,7 +10,7 @@ const A = [
         "Model B": "baize",
         "real_A": "System A",
         "real_B": "System F",
-        "distractor": "The coolest thing that System A can do is a 60 second handstand."
+        "distractor": "System A has been all around Europe two times."
     },
     {
         "instruction_idx": 13,
@@ -23,7 +23,7 @@ const A = [
         "Model B": "alpaca",
         "real_A": "System A",
         "real_B": "System F",
-        "distractor": "System B has been all around Europe two times."
+        "distractor": "The coolest thing that System B can do is a 60 second handstand."
     },
     {
         "instruction_idx": 6,
@@ -36,7 +36,7 @@ const A = [
         "Model B": "cohere",
         "real_A": "System A",
         "real_B": "System F",
-        "distractor": "System A likes to eat apples and oranges."
+        "distractor": "System A has been all around Europe two times."
     },
     {
         "instruction_idx": 10,
@@ -49,7 +49,7 @@ const A = [
         "Model B": "cohere",
         "real_A": "System A",
         "real_B": "System F",
-        "distractor": "System B plays a lot of soccer and basketball."
+        "distractor": "The coolest thing that System B can do is a 60 second handstand."
     },
     {
         "instruction_idx": 21,
@@ -62,7 +62,7 @@ const A = [
         "Model B": "openassist",
         "real_A": "System A",
         "real_B": "System F",
-        "distractor": "The coolest thing that System B can do is a 60 second handstand."
+        "distractor": "System B has been all around Europe two times."
     },
     {
         "instruction_idx": 16,
@@ -75,7 +75,7 @@ const A = [
         "Model B": "koala",
         "real_A": "System A",
         "real_B": "System F",
-        "distractor": "System A likes to eat apples and oranges."
+        "distractor": "The coolest thing that System A can do is a 60 second handstand."
     },
     {
         "instruction_idx": 24,
@@ -114,7 +114,7 @@ const A = [
         "Model B": "cohere",
         "real_A": "System A",
         "real_B": "System F",
-        "distractor": "System A has been all around Europe two times."
+        "distractor": "System A plays a lot of soccer and basketball."
     },
     {
         "instruction_idx": 7,
@@ -140,7 +140,7 @@ const A = [
         "Model B": "dolly",
         "real_A": "System A",
         "real_B": "System F",
-        "distractor": "The coolest thing that System A can do is a 60 second handstand."
+        "distractor": "System A plays a lot of soccer and basketball."
     },
     {
         "instruction_idx": 4,
@@ -153,7 +153,7 @@ const A = [
         "Model B": "instructgpt",
         "real_A": "System A",
         "real_B": "System F",
-        "distractor": "System A has been all around Europe two times."
+        "distractor": "System A plays a lot of soccer and basketball."
     },
     {
         "instruction_idx": 8,
@@ -166,7 +166,7 @@ const A = [
         "Model B": "wizardlm",
         "real_A": "System A",
         "real_B": "System F",
-        "distractor": "System B likes to eat apples and oranges."
+        "distractor": "The coolest thing that System B can do is a 60 second handstand."
     },
     {
         "instruction_idx": 2,
@@ -179,7 +179,7 @@ const A = [
         "Model B": "baize",
         "real_A": "System A",
         "real_B": "System F",
-        "distractor": "The coolest thing that System B can do is a 60 second handstand."
+        "distractor": "System B likes to eat apples and oranges."
     },
     {
         "instruction_idx": 18,
@@ -192,7 +192,7 @@ const A = [
         "Model B": "llama",
         "real_A": "System A",
         "real_B": "System F",
-        "distractor": "The coolest thing that System B can do is a 60 second handstand."
+        "distractor": "System B likes to eat apples and oranges."
     },
     {
         "instruction_idx": 22,
@@ -205,7 +205,7 @@ const A = [
         "Model B": "llama",
         "real_A": "System A",
         "real_B": "System F",
-        "distractor": "System B plays a lot of soccer and basketball."
+        "distractor": "System B likes to eat apples and oranges."
     },
     {
         "instruction_idx": 5,
@@ -218,7 +218,7 @@ const A = [
         "Model B": "mpt",
         "real_A": "System A",
         "real_B": "System F",
-        "distractor": "System B has been all around Europe two times."
+        "distractor": "The coolest thing that System B can do is a 60 second handstand."
     },
     {
         "instruction_idx": 17,
@@ -231,7 +231,7 @@ const A = [
         "Model B": "chatgpt",
         "real_A": "System A",
         "real_B": "System F",
-        "distractor": "The coolest thing that System A can do is a 60 second handstand."
+        "distractor": "System A plays a lot of soccer and basketball."
     },
     {
         "instruction_idx": 13,
@@ -244,7 +244,7 @@ const A = [
         "Model B": "alpaca",
         "real_A": "System A",
         "real_B": "System F",
-        "distractor": "System A likes to eat apples and oranges."
+        "distractor": "System A plays a lot of soccer and basketball."
     },
     {
         "instruction_idx": 15,
@@ -257,7 +257,7 @@ const A = [
         "Model B": "gpt4",
         "real_A": "System A",
         "real_B": "System F",
-        "distractor": "System B likes to eat apples and oranges."
+        "distractor": "System B has been all around Europe two times."
     },
     {
         "instruction_idx": 16,
@@ -270,7 +270,7 @@ const A = [
         "Model B": "koala",
         "real_A": "System A",
         "real_B": "System F",
-        "distractor": "The coolest thing that System B can do is a 60 second handstand."
+        "distractor": "System B likes to eat apples and oranges."
     },
     {
         "instruction_idx": 4,
@@ -296,7 +296,7 @@ const A = [
         "Model B": "alpaca",
         "real_A": "System A",
         "real_B": "System F",
-        "distractor": "System B has been all around Europe two times."
+        "distractor": "System B plays a lot of soccer and basketball."
     },
     {
         "instruction_idx": 19,
@@ -309,7 +309,7 @@ const A = [
         "Model B": "mpt",
         "real_A": "System A",
         "real_B": "System F",
-        "distractor": "System B plays a lot of soccer and basketball."
+        "distractor": "System B likes to eat apples and oranges."
     },
     {
         "instruction_idx": 10,
@@ -322,7 +322,7 @@ const A = [
         "Model B": "cohere",
         "real_A": "System A",
         "real_B": "System F",
-        "distractor": "The coolest thing that System A can do is a 60 second handstand."
+        "distractor": "System A has been all around Europe two times."
     },
     {
         "instruction_idx": 22,
@@ -335,7 +335,7 @@ const A = [
         "Model B": "llama",
         "real_A": "System A",
         "real_B": "System F",
-        "distractor": "System A has been all around Europe two times."
+        "distractor": "System A likes to eat apples and oranges."
     },
     {
         "instruction_idx": 9,
@@ -348,7 +348,7 @@ const A = [
         "Model B": "falcon",
         "real_A": "System A",
         "real_B": "System F",
-        "distractor": "System A plays a lot of soccer and basketball."
+        "distractor": "System A has been all around Europe two times."
     },
     {
         "instruction_idx": 1,
@@ -361,7 +361,7 @@ const A = [
         "Model B": "alpaca",
         "real_A": "System A",
         "real_B": "System F",
-        "distractor": "System A has been all around Europe two times."
+        "distractor": "The coolest thing that System A can do is a 60 second handstand."
     },
     {
         "instruction_idx": 17,
@@ -387,7 +387,7 @@ const A = [
         "Model B": "redpajama",
         "real_A": "System A",
         "real_B": "System F",
-        "distractor": "System A has been all around Europe two times."
+        "distractor": "The coolest thing that System A can do is a 60 second handstand."
     },
     {
         "instruction_idx": 24,
@@ -398,6 +398,19 @@ const A = [
         "System B": " No, Simon Cowell cannot vote for the next Supreme Court judge as he is not a member of the United States government.",
         "Model A": "redpajama",
         "Model B": "falcon",
+        "real_A": "System A",
+        "real_B": "System F",
+        "distractor": "The coolest thing that System B can do is a 60 second handstand."
+    },
+    {
+        "instruction_idx": 12,
+        "instruction": "Do quadragenarian's have little memory capacity?",
+        "reference": "No. Quadragenarians are people that are in their 40s. As people age, their memory can get worse. Half of people over age 50 have mild to severe memory loss. Ken Jennings was 46 years old when he won Jeopardy! The Greatest of All Time tournament.",
+        "pair_idx": 14,
+        "System A": " Quadragenarians may experience age-related cognitive decline, including potential declines in memory and other cognitive skills. However, the extent to which these declines occur depends on various factors such as lifestyle and health conditions. The overall impact of aging on memory function has been exaggerated by some popular culture and media reports.\n Key points from presentation with emphasis on importance of accurate information about aging:\n\n1.   Age is a highly individualized phenomenon that can vary greatly depending on genetic, environmental, and socioeconomic influences. Contrary to",
+        "System B": "No, being a quadragenarian, an individual aged between 40 and 49, does not necessarily equate to having little memory capacity. Memory capacity can be influenced by a variety of factors such as overall health, lifestyle, stress levels, and more. However, it's not uncommon for people to begin noticing slight changes in their memory as they age, often starting in their 40s, but this can vary greatly from person to person. It doesn't mean they have little memory capacity, simply that they may begin experiencing slight cognitive changes.",
+        "Model A": "koala",
+        "Model B": "gpt4",
         "real_A": "System A",
         "real_B": "System F",
         "distractor": "System B likes to eat apples and oranges."
@@ -413,20 +426,7 @@ const A = [
         "Model B": "gpt4",
         "real_A": "System A",
         "real_B": "System F",
-        "distractor": "System B has been all around Europe two times."
-    },
-    {
-        "instruction_idx": 12,
-        "instruction": "Do quadragenarian's have little memory capacity?",
-        "reference": "No. Quadragenarians are people that are in their 40s. As people age, their memory can get worse. Half of people over age 50 have mild to severe memory loss. Ken Jennings was 46 years old when he won Jeopardy! The Greatest of All Time tournament.",
-        "pair_idx": 14,
-        "System A": " Quadragenarians may experience age-related cognitive decline, including potential declines in memory and other cognitive skills. However, the extent to which these declines occur depends on various factors such as lifestyle and health conditions. The overall impact of aging on memory function has been exaggerated by some popular culture and media reports.\n Key points from presentation with emphasis on importance of accurate information about aging:\n\n1.   Age is a highly individualized phenomenon that can vary greatly depending on genetic, environmental, and socioeconomic influences. Contrary to",
-        "System B": "No, being a quadragenarian, an individual aged between 40 and 49, does not necessarily equate to having little memory capacity. Memory capacity can be influenced by a variety of factors such as overall health, lifestyle, stress levels, and more. However, it's not uncommon for people to begin noticing slight changes in their memory as they age, often starting in their 40s, but this can vary greatly from person to person. It doesn't mean they have little memory capacity, simply that they may begin experiencing slight cognitive changes.",
-        "Model A": "koala",
-        "Model B": "gpt4",
-        "real_A": "System A",
-        "real_B": "System F",
-        "distractor": "System A likes to eat apples and oranges."
+        "distractor": "System A has been all around Europe two times."
     },
     {
         "instruction_idx": 23,
@@ -439,7 +439,7 @@ const A = [
         "Model B": "wizardlm",
         "real_A": "System A",
         "real_B": "System F",
-        "distractor": "System A likes to eat apples and oranges."
+        "distractor": "The coolest thing that System A can do is a 60 second handstand."
     },
     {
         "instruction_idx": 0,
@@ -452,7 +452,7 @@ const A = [
         "Model B": "cohere",
         "real_A": "System A",
         "real_B": "System F",
-        "distractor": "The coolest thing that System B can do is a 60 second handstand."
+        "distractor": "System B plays a lot of soccer and basketball."
     },
     {
         "instruction_idx": 3,
@@ -465,7 +465,7 @@ const A = [
         "Model B": "wizardlm",
         "real_A": "System A",
         "real_B": "System F",
-        "distractor": "The coolest thing that System A can do is a 60 second handstand."
+        "distractor": "System A has been all around Europe two times."
     },
     {
         "instruction_idx": 9,
@@ -504,7 +504,7 @@ const A = [
         "Model B": "wizardlm",
         "real_A": "System A",
         "real_B": "System F",
-        "distractor": "System B plays a lot of soccer and basketball."
+        "distractor": "The coolest thing that System B can do is a 60 second handstand."
     },
     {
         "instruction_idx": 20,
@@ -530,7 +530,7 @@ const A = [
         "Model B": "mpt",
         "real_A": "System A",
         "real_B": "System F",
-        "distractor": "System A likes to eat apples and oranges."
+        "distractor": "System A has been all around Europe two times."
     },
     {
         "instruction_idx": 5,
@@ -556,7 +556,7 @@ const A = [
         "Model B": "redpajama",
         "real_A": "System A",
         "real_B": "System F",
-        "distractor": "System B has been all around Europe two times."
+        "distractor": "The coolest thing that System B can do is a 60 second handstand."
     },
     {
         "instruction_idx": 8,
@@ -569,7 +569,7 @@ const A = [
         "Model B": "wizardlm",
         "real_A": "System A",
         "real_B": "System F",
-        "distractor": "The coolest thing that System A can do is a 60 second handstand."
+        "distractor": "System A plays a lot of soccer and basketball."
     },
     {
         "instruction_idx": 14,
@@ -582,7 +582,7 @@ const A = [
         "Model B": "vicuna",
         "real_A": "System A",
         "real_B": "System F",
-        "distractor": "System B plays a lot of soccer and basketball."
+        "distractor": "System B has been all around Europe two times."
     },
     {
         "instruction_idx": 6,
@@ -621,7 +621,7 @@ const A = [
         "Model B": "wizardlm",
         "real_A": "System A",
         "real_B": "System F",
-        "distractor": "System B likes to eat apples and oranges."
+        "distractor": "System B plays a lot of soccer and basketball."
     },
     {
         "instruction_idx": 21,
@@ -634,7 +634,7 @@ const A = [
         "Model B": "openassist",
         "real_A": "System A",
         "real_B": "System F",
-        "distractor": "System A plays a lot of soccer and basketball."
+        "distractor": "System A has been all around Europe two times."
     },
     {
         "instruction_idx": 15,
@@ -647,6 +647,6 @@ const A = [
         "Model B": "gpt4",
         "real_A": "System A",
         "real_B": "System F",
-        "distractor": "The coolest thing that System A can do is a 60 second handstand."
+        "distractor": "System A has been all around Europe two times."
     }
 ];

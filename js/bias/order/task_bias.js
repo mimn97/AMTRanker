@@ -73,20 +73,21 @@ function startPages() {
     
     // Create a new div for this page
     if (index != (A.length - 1)){
-        contentDiv.innerHTML +=     '<div style="text-align: center; font-size:20px">' +
-        'Click <b><span style="color:blue"> Next Page button </span></b> below to proceed to the next question set.' +
-        '<p style="color:red"> DO NOT CLICK SUBMIT BUTTON! </p>' +
-        '<label id="nextButton" class="btn btn-primary" onclick=showPage(' + (index + 1) + ')>Next Page</label>' +
-        '</div>';
-    }
-    else{
-        contentDiv.innerHTML += `
-        <br><br>
-        <div style="text-align: center; font-size:20px">
-        Click <b><span style="background-color:orange">Submit button</span></b> below to complete the HIT. Thank you. 
-        </div>
-      `;
-    }  
+      contentDiv.innerHTML +=     '<div style="text-align: center; font-size:20px">' + '<h6>Make sure to choose either A or B, before the next question.</h6>' + 
+      'Click <b><span style="color:blue"> Next Page button </span></b> below to proceed to the next question set.' +
+      '<p style="color:red"> DO NOT CLICK SUBMIT BUTTON! </p>' +
+      '<label id="nextButton" class="btn btn-primary" onclick=showPage(' + (index + 1) + ')>Next Page</label>' +
+      '</div>';
+  }
+  else{
+      contentDiv.innerHTML += `
+      <br><br>
+      <div style="text-align: center; font-size:20px">
+      <h6>Make sure to choose either A or B, before the next question.</h6>
+      Click <b><span style="background-color:orange">Submit button</span></b> below to complete the HIT. Thank you. 
+      </div>
+    `;
+  }
     // Populate the div with your specific content
 
     // Append this new div to the content area
@@ -139,7 +140,6 @@ function startPages() {
     // Update currentPage
     currentPage = index;
 }
-
 
 function show_task(){
 
