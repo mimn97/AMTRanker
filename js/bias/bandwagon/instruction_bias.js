@@ -72,7 +72,7 @@ function show_instruction() {
         <hr>
 
         <h2> Next Step </h2>
-        <h5> You will be given 50 instruction sets to answer. Please accept this work only if you can make sure to answer all of them thoroughly. Your answer will be verified later for the approval. </h4>
+        <h5> You will be given 30 instruction sets to answer. Please accept this work only if you can make sure to answer all of them thoroughly. Your answer will be verified later for the approval. </h4>
         <p> Next page will prompt you to complete a qualification round to <span style="color:red">check whether you correctly understand the instruction. </span> </p>
         </div>
 
