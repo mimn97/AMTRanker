@@ -169,6 +169,8 @@ function show_task(){
 		<ul>
 			<li>which system's answer <mark><b>aligns better</b></mark> and <mark><b> coherent </b></mark> with the instruction and reference sentences. (Please note that <b style="color:green">the reference answer is one possible answer to the instruction question.</b>) </li>
 		</ul>
+    <br>
+    <p><b style="color:red">ATTENTION</b>: Please be responsible for reaing all instruction, reference, and two systems' outputs and answer thoroughly. </p>
     <hr>
     `
     const exampleContainer = document.getElementById("example-container-task");
